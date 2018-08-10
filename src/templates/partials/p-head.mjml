@@ -1,0 +1,7 @@
+<mj-title>{{ title }}</mj-title>
+<mj-preview>{{ preview }}</mj-preview>
+<mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+<mj-attributes>
+	<mj-all font-family="Open Sans"/>
+</mj-attributes>
+<link rel="stylesheet" type="text/css" href="css/style.css">

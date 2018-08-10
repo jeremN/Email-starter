@@ -1,0 +1,24 @@
+<mjml>
+	<mj-head>
+		
+	</mj-head>
+	<mj-body background-color="#ededed">
+
+		<mj-section>
+			<mj-column width="50%">			
+				<mj-text color="#a5a5a6" font-size="12px">
+					Découvrez Sponsoweb
+				</mj-text>
+			</mj-column>
+			<mj-column width="50%">			
+				<mj-text color="#a5a5a6" font-size="12px">
+					Pour la version en ligne,<mj-button href="#" text-decoration="underline" font-size="11px"> cliquez ici</mj-button>
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		
+
+		<mj-section>
+		</mj-section>
+	</mj-body>
+</mjml>

@@ -1,0 +1,14 @@
+	<mj-section>
+		<mj-column height="100px">
+			<mj-table>
+				<tr>
+					<td style="{{ ribbon.textLeftStyle }}">
+						{{ ribbon.textLeft }}
+					</td>
+					<td style="{{ ribbon.textRightStyle }}">
+						{{ ribbon.textRight }}
+					</td>
+				</tr>
+			</mj-table>
+		</mj-column>
+	</mj-section>

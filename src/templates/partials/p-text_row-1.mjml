@@ -1,0 +1,9 @@
+		<mj-section>
+			<mj-column width="100%">
+				<mj-text align="center">
+					<p style="{{ text_row1.textStyle }}">
+						{{ text_row1.text | safe }}
+          </p>
+				</mj-text>
+			</mj-column>
+		<mj-section>

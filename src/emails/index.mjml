@@ -1,0 +1,18 @@
+{% extends 'base.mjml' %}
+
+{% block preHeader %}
+	{% include 'partials/p-preheader_two-col.mjml' %}
+{% endblock %}
+
+{% block main %}
+	{% include 'partials/p-hero_btn.mjml' %}
+	{% include 'partials/p-text_title.mjml' %}
+	{% include 'partials/p-cards_two-col.mjml' %}
+	{% include 'partials/p-text_row-3.mjml' %}
+	{% include 'partials/p-ribbon.mjml' %}
+	{% include 'partials/p-text_row-1.mjml' %}
+{% endblock %}
+
+{% block footer %}
+	{% include 'partials/p-footer.mjml' %}
+{% endblock %}

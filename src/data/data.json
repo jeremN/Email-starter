@@ -1,0 +1,102 @@
+{
+	"body_color": "#ededed",
+	"title": "Hello",
+	"preview": "Hello World !",
+	"browser_url": "#",
+	"logo": {
+		"src": "http://via.placeholder.com/46x60",
+		"url": "www.google.com",
+		"title": "google",
+		"width": "46px",
+		"height": "60px"
+	},
+	"hero": {
+		"btn": "Email Starter",
+		"btn_url": "#",
+		"btn_title": "",
+		"src": "http://via.placeholder.com/600x300",
+		"width": "600px",
+		"height": "300px"	
+	},
+	"text_title": {
+		"title": "Hello !",
+		"titleColor": "#cb521c",
+		"titleStyle": "font-size:30px; line-height: 30px; font-weight:bold; margin: 0 0 10px;",
+		"paragraph": "Lorem ipsum",
+		"paragraphStyle": "font-size: 18px; line-height: 25px; color:#333; margin: 0 0 10px;",
+		"link": "www.google.com",
+		"linkStyle": "color: #009de0; text-decoration: underline;",
+		"linkHref": "www.google.com",
+		"linkTitle": "Google"
+	},
+	"cards": [
+		{
+			"src": "http://via.placeholder.com/50x50",
+			"alt": "",
+			"paragraph": "Lorem ispum <br> sit",
+			"bold":"dolor amet ?",
+			"backgroundColor": "#dc911b"
+		},
+		{
+			"src": "http://via.placeholder.com/50x50",
+			"alt": "",
+			"paragraph": "Lorem ispum <br> sit",
+			"bold":"dolor amet ?",
+			"backgroundColor": "#d47625"
+		},
+		{
+			"src": "http://via.placeholder.com/50x50",
+			"alt": "",
+			"paragraph": "Lorem ispum <br> sit",
+			"bold":"dolor amet ?",
+			"backgroundColor": "#cd582c"
+		},
+		{
+			"src": "http://via.placeholder.com/50x50",
+			"alt": "",
+			"paragraph": "Lorem ispum <br> sit",
+			"bold":"dolor amet ?",
+			"backgroundColor": "#c7362e"
+		}
+	],
+	"text_row3": {
+		"title": "Hello",
+		"titleStyle": "margin: 0; font-size: 30px; line-height: 30px; color: #cd521c; font-weight: normal; text-align: center;",
+		"p1": "Un service gratuit indispensable pour votre site Web. Autosurf, Echange de bannière, Sponsorisation, tout est là pour <span style='font-weight: bold;'>booster l'activité de votre site..</span>",
+		"p1Style": "font-size: 16px; margin: 10px 0; line-height: 20px;",
+		"p2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+		"p2Style": "font-size: 16px; margin: 10px 0 0; line-height: 20px;",
+		"btn": "Essayer google.com",
+		"btnStyle": "background: #009de0; border: 1px solid #009de0; font-family: sans-serif; font-size: 15px; line-height: 15px; text-transform: uppercase; text-decoration: none; padding: 13px 25px; color: #ffffff; display: block; border-radius: 4px; width: 260px; text-align: center; margin: auto;",
+		"btnHref": "www.site.com",
+		"btnTitle": "Lorem"
+	},
+	"ribbon": {
+		"textLeft": "Your lorem here:",
+		"textLeftStyle": "padding: 20px; margin: 10px 0; font-size: 16px; line-height: 20px; color: #fff; text-align: left; background: #c83d2e;",
+		"textRight": "5653051",
+		"textRightStyle": "padding: 20px; margin: 10px 0; font-size: 24px; font-weight:bold; line-height: 20px; color: #fff; text-align: right; background: #c83d2e;"
+	},
+	"text_row1": {
+		"text": "Lorem ipsum dolor sit amet.<br><br>google.com<br><br>Lorem ipsum dolor sit amet.",
+		"textStyle": "margin: 0; font-size: 15px; line-height: 20px; color: #333; text-align: center;"
+	},
+	"footer": {
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+		"copyright": "© 2018 HelloWorld - All right reserved",
+		"socials": [
+			{
+				"name": "facebook",
+				"url": "www.facebook.com",
+				"size": "13px",
+				"src": ""
+			},
+			{
+				"name": "twitter",
+				"url": "www.twitter.com",
+				"size": "22px",
+				"src": ""
+			}
+		]	
+	}
+}
