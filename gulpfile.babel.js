@@ -120,7 +120,7 @@ export function watch() {
 
 //Optimize imgs, build template and output template as html
 gulp.task('build', 
-	gulp.series(optimImg, buildTemplates, buildMjml))
+	gulp.series(clean, optimImg, buildTemplates, buildMjml))
 
 //Run build task and create server, reload on change
 gulp.task('dev', 
