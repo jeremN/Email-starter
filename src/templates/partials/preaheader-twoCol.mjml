@@ -1,8 +1,0 @@
-<mj-section>
-	<mj-column width="50%">
-		<mj-text>Découvrez Sponsoweb</mj-text>
-	</mj-column>
-	<mj-column width="50%">
-		<mj-text>Pour la version en ligne,<mj-button href="#" title="Voir cet email dans le navigateur"></mj-button></mj-text>
-	</mj-column>
-</mj-section>

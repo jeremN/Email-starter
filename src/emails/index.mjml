@@ -6,11 +6,12 @@
 
 {% block main %}
 	{% include 'partials/p-hero_btn.mjml' %}
-	{% include 'partials/p-text_title.mjml' %}
-	{% include 'partials/p-cards_two-col.mjml' %}
-	{% include 'partials/p-text_row-3.mjml' %}
-	{% include 'partials/p-ribbon.mjml' %}
-	{% include 'partials/p-text_row-1.mjml' %}
+	{% include 'partials/p-text_onecol-withbtn.mjml' %}
+	{% include 'partials/p-hero_text.mjml' %}
+	{% include 'partials/p-text_twocol.mjml' %}
+	{% include 'partials/p-text_threecol.mjml' %}
+	{% include 'partials/p-thumbleft.mjml' %}
+	{% include 'partials/p-thumbright.mjml' %}
 {% endblock %}
 
 {% block footer %}

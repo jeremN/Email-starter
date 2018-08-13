@@ -1,0 +1,16 @@
+
+<mj-hero
+	padding="0"
+	mode="fluid-height"
+	background-width="{{ hero_text.width }}"
+	background-height="{{ hero_text.height }}"
+	background-url="{{ hero_text.src }}"
+	background-size="cover !important"
+	background-color="{{ hero_text.bgColor }}"
+	background-position="center center !important"
+	vertical-align="middle"			
+	width="100%">
+	<mj-text>
+		<p style="{{ hero_text.styles }}">{{ hero_text.text }}</p>
+	</mj-text>
+</mj-hero>

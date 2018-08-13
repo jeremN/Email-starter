@@ -1,22 +1,33 @@
 {
-	"body_color": "#ededed",
-	"title": "Hello",
-	"preview": "Hello World !",
-	"browser_url": "#",
-	"logo": {
-		"src": "http://via.placeholder.com/46x60",
+	"body_color": "#333333",
+	"title": "Lorem lorem",
+	"preview": "Lorem ipsum !",
+	"hero_btn": {
+		"text": "Hello World",
 		"url": "www.google.com",
-		"title": "google",
-		"width": "46px",
-		"height": "60px"
+		"title": "Click here",
+		"width":"600px",
+		"height":"300px",
+		"bgColor": "#fff",
+		"src":"http://placehold.it/600x300/dddddd",
+		"styles": {
+			"background": "#009de0",
+			"color": "#fff",
+			"border": "2px solid #009de0",
+			"padding": "20px",
+			"margin": "0",
+			"fontSize": "30px",
+			"fontWeight": "bold",
+			"lineHeight": "25px"
+		}
 	},
-	"hero": {
-		"btn": "Email Starter",
-		"btn_url": "#",
-		"btn_title": "",
-		"src": "http://via.placeholder.com/600x300",
-		"width": "600px",
-		"height": "300px"	
+	"hero_text": {
+		"text": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.",
+		"src": "http://placehold.it/600x300/222222",
+		"width":"600px",
+		"height":"300px",
+		"bgColor": "#222222",
+		"styles": "background: none; color: #fff; padding: 20px; margin: 0; font-size: 16px, font-weight: normal; line-height: 20px;"
 	},
 	"text_title": {
 		"title": "Hello !",
@@ -29,6 +40,20 @@
 		"linkHref": "www.google.com",
 		"linkTitle": "Google"
 	},
+	"list1": [
+		{
+			"text": "List item 1",
+			"style": "margin:0 0 10px 30px;"
+		},
+		{
+			"text": "List item 2",
+			"style": "margin:0 0 10px 30px;"
+		},
+		{
+			"text": "List item 3",
+			"style": "margin:0 0 10px 30px;"
+		}
+	],
 	"cards": [
 		{
 			"src": "http://via.placeholder.com/50x50",
@@ -59,27 +84,58 @@
 			"backgroundColor": "#c7362e"
 		}
 	],
-	"text_row3": {
+	"text_onecol": {
 		"title": "Hello",
-		"titleStyle": "margin: 0; font-size: 30px; line-height: 30px; color: #cd521c; font-weight: normal; text-align: center;",
-		"p1": "Un service gratuit indispensable pour votre site Web. Autosurf, Echange de bannière, Sponsorisation, tout est là pour <span style='font-weight: bold;'>booster l'activité de votre site..</span>",
+		"titleStyle": "margin: 0; font-size: 30px; line-height: 30px; color: #333333; font-weight: normal; text-align: left;",
+		"p1": "Lorem ipsum dolor sit amet, consectetur adipisicing eli. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span style='font-weight: bold;'>elit sed do eiusmod.</span>",
 		"p1Style": "font-size: 16px; margin: 10px 0; line-height: 20px;",
-		"p2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
-		"p2Style": "font-size: 16px; margin: 10px 0 0; line-height: 20px;",
 		"btn": "Essayer google.com",
 		"btnStyle": "background: #009de0; border: 1px solid #009de0; font-family: sans-serif; font-size: 15px; line-height: 15px; text-transform: uppercase; text-decoration: none; padding: 13px 25px; color: #ffffff; display: block; border-radius: 4px; width: 260px; text-align: center; margin: auto;",
 		"btnHref": "www.site.com",
 		"btnTitle": "Lorem"
 	},
-	"ribbon": {
-		"textLeft": "Your lorem here:",
-		"textLeftStyle": "padding: 20px; margin: 10px 0; font-size: 16px; line-height: 20px; color: #fff; text-align: left; background: #c83d2e;",
-		"textRight": "5653051",
-		"textRightStyle": "padding: 20px; margin: 10px 0; font-size: 24px; font-weight:bold; line-height: 20px; color: #fff; text-align: right; background: #c83d2e;"
+	"text_twocol": {
+		"img_col1": "http://placehold.it/310",
+		"imgwidth_col1": "300px",
+		"text_col1": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.",
+		"img_col2": "http://placehold.it/310",
+		"imgwidth_col2": "300px",
+		"text_col2": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
 	},
-	"text_row1": {
-		"text": "Lorem ipsum dolor sit amet.<br><br>google.com<br><br>Lorem ipsum dolor sit amet.",
-		"textStyle": "margin: 0; font-size: 15px; line-height: 20px; color: #333; text-align: center;"
+	"text_threecol": {
+		"img_col1": "http://placehold.it/200",
+		"imgwidth_col1": "200px",
+		"text_col1": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.",
+		"img_col2": "http://placehold.it/200",
+		"imgwidth_col2": "200px",
+		"text_col2": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+		"img_col3": "http://placehold.it/200",
+		"imgwidth_col3": "200px",
+		"text_col3": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+	},
+	"thumbLeft": {
+		"src": "http://placehold.it/200",
+		"imgWidth": "200px",
+		"text": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+		"title": "Class aptent taciti sociosqu",
+		"btn": {
+			"url": "www.google.fr",
+			"title": "Button",
+			"text": "Button",
+			"styles": "width: 140px; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-transform: uppercase; text-decoration: none; padding: 13px 15px; color: #ffffff; display: block; border-radius: 4px; text-align: center;"
+		}
+	},
+	"thumbRight": {
+		"src": "http://placehold.it/200",
+		"imgWidth": "200px",
+		"text": "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+		"title": "Class aptent taciti sociosqu",
+		"btn": {
+			"url": "www.google.fr",
+			"title": "Button",
+			"text": "Button",
+			"styles": "width: 140px; background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-transform: uppercase; text-decoration: none; padding: 13px 15px; color: #ffffff; display: block; border-radius: 4px; text-align: center;"
+		}
 	},
 	"footer": {
 		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
@@ -88,7 +144,7 @@
 			{
 				"name": "facebook",
 				"url": "www.facebook.com",
-				"size": "13px",
+				"size": "22px",
 				"src": ""
 			},
 			{

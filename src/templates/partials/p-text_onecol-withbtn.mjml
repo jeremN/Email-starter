@@ -1,0 +1,22 @@
+{% import 'macros/m-btn.mjml' as btn %}
+	
+<mj-section>
+	<mj-column>
+		<mj-text align="left" padding="0 10px 15px">
+			<h2 style="{{ text_onecol.titleStyle }}">{{ text_onecol.title }}</h2>
+		</mj-text>
+		<mj-text align="left" padding="0 10px">
+			<p style="{{ text_onecol.p1Style }}">{{ text_onecol.p1 | safe }}</p>
+		</mj-text>
+		<mj-text>
+			<ul style="padding: 0; margin: 0;">
+			{% for li in list1 %}
+			<li style="{{ li.style }}">{{ li.text }}</li>
+			{% endfor %}
+			</ul>
+		</mj-text>
+		<mj-text align="center">
+		{{ btn.htmlButton(text_onecol.btnHref, text_onecol.btnTitle, text_onecol.btnStyle, text_onecol.btn) }}
+		</mj-text>
+	</mj-column>
+</mj-section>

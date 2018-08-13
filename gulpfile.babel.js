@@ -10,10 +10,9 @@ import imagemin 			from 'gulp-imagemin'
 import pngquant 			from 'imagemin-pngquant'
 import cache 					from 'gulp-cache'
 import plumber 				from 'gulp-plumber'
-import del 						from 'del'
 import rimraf 				from 'rimraf'
-import Inlinecss			from 'gulp-inline-css'
 import fs 						from 'fs'
+import htmlBeautify		from 'gulp-html-beautify'
 
 const server = browserSync.create()
 
@@ -52,6 +51,12 @@ export function clean(done) {
 
 export function loadData() {
 	return JSON.parse(fs.readFileSync(paths.data))
+}
+
+export function cleanHtml() {
+	return gulp.src(paths.build.dist)
+		.pipe(htmlClean())
+		.pipe(gulp.dest(paths.build.dist))
 }
 
 export function optimImg() {
@@ -96,18 +101,40 @@ export function buildTemplates() {
 }
 
 export function buildMjml() {
-	const options = {
+	const htmlOptions = {
+    "indent_size": 2,
+    "indent_char": " ",
+    "eol": "\n",
+    "indent_level": 0,
+    "indent_with_tabs": false,
+    "preserve_newlines": true,
+    "max_preserve_newlines": 10,
+    "jslint_happy": false,
+    "space_after_anon_function": false,
+    "brace_style": "collapse",
+    "keep_array_indentation": false,
+    "keep_function_indentation": false,
+    "space_before_conditional": true,
+    "break_chained_methods": false,
+    "eval_code": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0,
+    "wrap_attributes": "auto",
+    "wrap_attributes_indent_size": 2,
+    "end_with_newline": false
+	}
+	const mjmlOptions = {
 		beautify: true,
-		minify: false
+		minify: true,
 	}
 	const inline = {
 		applyStyletags: false,
 		removeStyleTags: false
 	}
 	return gulp.src(paths.dev.src)
-		.pipe(gulpMjml(mjml, options))
+		.pipe(gulpMjml(mjml, mjmlOptions))
 		.pipe(gulp.dest(paths.build.dist))
-		.pipe(Inlinecss(inline))
+		.pipe(htmlBeautify(htmlOptions))
 		.pipe(gulp.dest(paths.build.dist))
 }
                
