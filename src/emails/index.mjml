@@ -1,19 +1,19 @@
 {% extends 'base.mjml' %}
 
 {% block preHeader %}
-	{% include 'partials/p-preheader_two-col.mjml' %}
+	{% include 'partials/preheader_two-col.mjml' %}
 {% endblock %}
 
 {% block main %}
-	{% include 'partials/p-hero_btn.mjml' %}
-	{% include 'partials/p-text_onecol-withbtn.mjml' %}
-	{% include 'partials/p-hero_text.mjml' %}
-	{% include 'partials/p-text_twocol.mjml' %}
-	{% include 'partials/p-text_threecol.mjml' %}
-	{% include 'partials/p-thumbleft.mjml' %}
-	{% include 'partials/p-thumbright.mjml' %}
+	{% include 'partials/hero_btn.mjml' %}
+	{% include 'partials/text_onecol-withbtn.mjml' %}
+	{% include 'partials/hero_text.mjml' %}
+	{% include 'partials/text_twocol.mjml' %}
+	{% include 'partials/text_threecol.mjml' %}
+	{% include 'partials/thumbleft.mjml' %}
+	{% include 'partials/thumbright.mjml' %}
 {% endblock %}
 
 {% block footer %}
-	{% include 'partials/p-footer.mjml' %}
+	{% include 'partials/footer.mjml' %}
 {% endblock %}

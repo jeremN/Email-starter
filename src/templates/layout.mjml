@@ -1,8 +1,8 @@
 <mjml>
-	<mj-head>
-		{% include 'partials/p-head.mjml' %}
-	</mj-head>
-	<mj-body background-color="{{ body_color }}">
-		{% block content %} {% endblock %}
-	</mj-body>
+  <mj-head>
+    {% include 'partials/head.mjml' %}
+  </mj-head>
+  <mj-body background-color="{{ body_color }}">
+    {% block content %} {% endblock %}
+  </mj-body>
 </mjml>

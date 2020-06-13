@@ -1,0 +1,18 @@
+<mj-section>
+  <mj-column width="50%">
+    <mj-image width="{{ text_twocol.imgwidth_col1 }}" height="auto" src="{{ text_twocol.img_col1 }}" />
+    <mj-text>
+      <p style="margin: 0; font-size: 15px;">
+        {{ text_twocol.text_col1 }}
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column width="50%">
+    <mj-image width="{{ text_twocol.imgwidth_col2 }}" height="auto" src="{{ text_twocol.img_col2 }}" />
+    <mj-text>
+      <p style="margin: 0; font-size: 15px;">
+        {{ text_twocol.text_col2 }}
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>

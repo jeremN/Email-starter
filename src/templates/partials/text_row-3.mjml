@@ -1,0 +1,18 @@
+<mj-section>
+  <mj-column>
+    <mj-text align="center" padding="0 10px 15px">
+      <h2 style="{{ text_row3.titleStyle }}">{{ text_row3.title }}</h2>
+    </mj-text>
+    <mj-text align="center" padding="0 10px">
+      <p style="{{ text_row3.p1Style }}">{{ text_row3.p1 | safe }}</p>
+    </mj-text>
+    <mj-text align="center">
+      <a href="{{ text_row3.btnHref }}" title="{{ text_row3.btnTitle }}" style="{{ text_row3.btnStyle }}">
+        {{ text_row3.btn}}
+      </a>
+    </mj-text>
+    <mj-text align="center" padding="20px 10px" margin="40px 0 20px">
+      <p style="{{ text_row3.p2Style }}">{{ text_row3.p2 }}</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

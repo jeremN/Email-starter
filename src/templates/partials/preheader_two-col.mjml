@@ -1,0 +1,16 @@
+<mj-section>
+  <mj-column width="50%">
+    <mj-text color="#a5a5a6" font-size="12px">
+      Lorem ipsum
+    </mj-text>
+  </mj-column>
+  <mj-column width="50%" align="right">
+    <mj-text color="#a5a5a6" font-size="12px" align="right">
+      Pour la version en ligne, <a href="{{ browser_url }}" title="Voir cet email dans le navigateur" style="color:#a5a5a6; text-decoration:underline; font-size: 11px;">cliquez ici</a>
+      </mj-button>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section padding="0 20px 20px" align="center">
+  <mj-image width="{{ logo.width }}" height="{{ logo.height }}" href="{{ logo.url }}" title="{{ logo.title }}" src="{{ logo.src }}" />
+</mj-section>

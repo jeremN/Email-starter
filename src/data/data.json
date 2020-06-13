@@ -1,7 +1,7 @@
 {
 	"body_color": "#333333",
-	"title": "Lorem lorem",
-	"preview": "Lorem ipsum !",
+	"title": "Email Starter with MJML, Nunjucks and Gulp",
+	"preview": "Test!",
 	"hero_btn": {
 		"text": "Hello World",
 		"url": "www.google.com",

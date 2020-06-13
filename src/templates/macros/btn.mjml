@@ -1,0 +1,10 @@
+{% macro mjButton(url, title, style, text) %}
+<mj-button href="{{ url }}" title="{{ title }}" background-color="{{ style.background }}" font-weight="{{ style.fontWeigth }}" font-size="{{ style.fontSize }}" line-height="{{ style.lineHeight }}" color="{{ style.color }}" border="{{ style.border }}" display="block" align="center" font-family="'Open Sans', sans-serif" padding="{{ style.padding }}" margin="{{ style.margin }}">
+  {{ text }}
+</mj-button>
+{% endmacro %}
+
+
+{% macro htmlButton(url, title, style, text) %}
+<a href="{{ url }}" title="{{ title }}" style="{{ style }}">{{ text }}</a>
+{% endmacro %}

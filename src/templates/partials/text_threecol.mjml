@@ -1,0 +1,26 @@
+<mj-section>
+  <mj-column width="33%">
+    <mj-image width="{{ text_threecol.imgwidth_col1 }}" height="auto" src="{{ text_threecol.img_col1 }}" />
+    <mj-text>
+      <p style="margin: 0; font-size: 15px;">
+        {{ text_threecol.text_col1 }}
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column width="33%">
+    <mj-image width="{{ text_threecol.imgwidth_col2 }}" height="auto" src="{{ text_threecol.img_col2 }}" />
+    <mj-text>
+      <p style="margin: 0; font-size: 15px;">
+        {{ text_threecol.text_col2 }}
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column width="33%">
+    <mj-image width="{{ text_threecol.imgwidth_col3 }}" height="auto" src="{{ text_threecol.img_col3 }}" />
+    <mj-text>
+      <p style="margin: 0; font-size: 15px;">
+        {{ text_threecol.text_col3 }}
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>

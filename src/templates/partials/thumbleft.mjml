@@ -1,0 +1,14 @@
+{% import 'macros/btn.mjml' as btn %}
+
+<mj-section>
+  <mj-column width="200px" padding="0 10px 10px 10px">
+    <mj-image width="{{ thumbLeft.imgWidth }}" height="auto" src="{{ thumbLeft.src }}" />
+  </mj-column>
+  <mj-column width="66.66%">
+    <mj-text align="left" padding="0 30px 10px 10px">
+      <h2>{{ thumbLeft.title }}</h2>
+      <p>{{ thumbLeft.text }}</p>
+      {{ btn.htmlButton(thumbLeft.btn.url, thumbLeft.btn.title, thumbLeft.btn.styles, thumbLeft.btn.text) }}
+    </mj-text>
+  </mj-column>
+</mj-section>
