@@ -1,7 +1,7 @@
 import { Heading, Img, Section } from "@react-email/components";
 import * as React from "react";
 
-interface HeaderProps {
+export interface HeaderProps {
   logoUrl?: string;
   logoAlt?: string;
   title?: string;
@@ -20,7 +20,7 @@ export function Header({ logoUrl, logoAlt = "Logo", title }: HeaderProps) {
         />
       )}
       {title && (
-        <Heading className="text-xl font-bold text-gray-900 m-0">
+        <Heading as="h2" className="text-xl font-bold text-gray-900 m-0">
           {title}
         </Heading>
       )}

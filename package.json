@@ -2,6 +2,7 @@
   "name": "email-starter",
   "version": "2.0.0",
   "description": "Modern email starter with React Email and TypeScript",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "email dev --dir src/emails",

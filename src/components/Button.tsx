@@ -1,7 +1,7 @@
 import { Button as REButton } from "@react-email/components";
 import * as React from "react";
 
-interface ButtonProps {
+export interface ButtonProps {
   href: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary";

@@ -18,7 +18,7 @@ import { Button } from "../components/Button";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
-interface Article {
+export interface Article {
   title: string;
   summary: string;
   imageUrl?: string;
@@ -26,7 +26,7 @@ interface Article {
   linkText?: string;
 }
 
-interface NewsletterProps {
+export interface NewsletterProps {
   previewText: string;
   heroImageUrl: string;
   heroTitle: string;
@@ -71,7 +71,7 @@ export default function Newsletter({
                 className="w-full"
               />
               <Section className="px-8 py-6">
-                <Heading className="text-2xl font-bold text-gray-900 m-0 mb-2">
+                <Heading as="h1" className="text-2xl font-bold text-gray-900 m-0 mb-2">
                   {heroTitle}
                 </Heading>
                 {heroSubtitle && (
@@ -94,7 +94,7 @@ export default function Newsletter({
                       className="w-full rounded mb-3"
                     />
                   )}
-                  <Heading className="text-lg font-semibold text-gray-900 m-0 mb-2">
+                  <Heading as="h2" className="text-lg font-semibold text-gray-900 m-0 mb-2">
                     {article.title}
                   </Heading>
                   <Text className="text-sm text-gray-600 m-0 mb-3 leading-6">

@@ -38,7 +38,7 @@ pnpm dev
 src/
   components/    Reusable UI components (Button, Header, Footer, SocialLinks)
   emails/        Email templates (each file = one template)
-  utils/         Shared utilities (rendering helpers)
+static/          Static assets (images, logos) served by the dev server
 ```
 
 ## Included Templates

@@ -1,12 +1,12 @@
 import { Link, Section } from "@react-email/components";
 import * as React from "react";
 
-interface SocialLink {
+export interface SocialLink {
   name: string;
   url: string;
 }
 
-interface SocialLinksProps {
+export interface SocialLinksProps {
   links: SocialLink[];
 }
 

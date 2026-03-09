@@ -19,13 +19,13 @@ import * as React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
-interface LineItem {
+export interface LineItem {
   name: string;
   quantity: number;
   price: string;
 }
 
-interface ReceiptProps {
+export interface ReceiptProps {
   previewText: string;
   companyName: string;
   orderNumber: string;
@@ -70,7 +70,7 @@ export default function Receipt({
               <Header title={companyName} />
 
               <Section className="px-8 pb-4">
-                <Heading className="text-2xl font-bold text-gray-900 m-0 mb-1">
+                <Heading as="h1" className="text-2xl font-bold text-gray-900 m-0 mb-1">
                   Order Confirmation
                 </Heading>
                 <Text className="text-sm text-gray-500 m-0">

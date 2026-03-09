@@ -3,7 +3,7 @@ import * as React from "react";
 
 import { SocialLinks } from "./SocialLinks";
 
-interface FooterProps {
+export interface FooterProps {
   companyName: string;
   address?: string;
   unsubscribeUrl?: string;
