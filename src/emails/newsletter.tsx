@@ -41,16 +41,16 @@ interface NewsletterProps {
 }
 
 export default function Newsletter({
-  previewText,
-  heroImageUrl,
-  heroTitle,
+  previewText = "This week's top stories and updates",
+  heroImageUrl = "https://placehold.co/600x300/6366f1/ffffff?text=Newsletter",
+  heroTitle = "This Week in Tech",
   heroSubtitle,
-  articles,
-  ctaText,
-  ctaUrl,
-  companyName,
+  articles = [],
+  ctaText = "Visit Our Blog",
+  ctaUrl = "https://example.com/blog",
+  companyName = "Acme Inc.",
   companyAddress,
-  unsubscribeUrl,
+  unsubscribeUrl = "https://example.com/unsubscribe",
   socials,
 }: NewsletterProps) {
   return (

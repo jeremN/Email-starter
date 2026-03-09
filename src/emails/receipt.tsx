@@ -47,14 +47,14 @@ interface ReceiptProps {
 }
 
 export default function Receipt({
-  previewText,
-  companyName,
-  orderNumber,
-  orderDate,
-  items,
-  subtotal,
-  tax,
-  total,
+  previewText = "Your order confirmation",
+  companyName = "Acme Inc.",
+  orderNumber = "ORD-0000",
+  orderDate = new Date().toLocaleDateString(),
+  items = [],
+  subtotal = "$0.00",
+  tax = "$0.00",
+  total = "$0.00",
   shippingAddress,
   supportEmail,
   companyAddress,
