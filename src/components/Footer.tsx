@@ -1,13 +1,13 @@
 import { Hr, Link, Section, Text } from "@react-email/components";
 import * as React from "react";
 
-import { SocialLinks } from "./SocialLinks";
+import { SocialLinks, type SocialLink } from "./SocialLinks";
 
 export interface FooterProps {
   companyName: string;
   address?: string;
   unsubscribeUrl?: string;
-  socials?: { name: string; url: string }[];
+  socials?: SocialLink[];
 }
 
 export function Footer({
@@ -17,7 +17,7 @@ export function Footer({
   socials,
 }: FooterProps) {
   return (
-    <Section className="mt-8">
+    <Section className="mt-8 px-8">
       <Hr className="border-gray-200 my-6" />
       {socials && socials.length > 0 && <SocialLinks links={socials} />}
       <Text className="text-xs text-gray-400 text-center m-0 mt-4">

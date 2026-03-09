@@ -1,22 +1,15 @@
 import {
-  Body,
-  Container,
-  Head,
   Heading,
   Hr,
-  Html,
   Img,
-  Preview,
   Section,
-  Tailwind,
   Text,
-  pixelBasedPreset,
 } from "@react-email/components";
 import * as React from "react";
 
 import { Button } from "../components/Button";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { EmailLayout } from "../components/EmailLayout";
+import type { SocialLink } from "../components/SocialLinks";
 
 export interface Article {
   title: string;
@@ -37,7 +30,7 @@ export interface NewsletterProps {
   companyName: string;
   companyAddress?: string;
   unsubscribeUrl: string;
-  socials?: { name: string; url: string }[];
+  socials?: SocialLink[];
 }
 
 export default function Newsletter({
@@ -54,80 +47,64 @@ export default function Newsletter({
   socials,
 }: NewsletterProps) {
   return (
-    <Html lang="en">
-      <Tailwind config={{ presets: [pixelBasedPreset] }}>
-        <Head />
-        <Preview>{previewText}</Preview>
-        <Body className="bg-gray-100 font-sans">
-          <Container className="mx-auto py-8 px-4 max-w-xl">
-            <Section className="bg-white rounded-lg overflow-hidden">
-              <Header title={companyName} />
+    <EmailLayout
+      previewText={previewText}
+      companyName={companyName}
+      companyAddress={companyAddress}
+      unsubscribeUrl={unsubscribeUrl}
+      socials={socials}
+    >
+      {/* Hero */}
+      <Img
+        src={heroImageUrl}
+        alt={heroTitle}
+        width={600}
+        className="w-full"
+      />
+      <Section className="px-8 py-6">
+        <Heading as="h1" className="text-2xl font-bold text-gray-900 m-0 mb-2">
+          {heroTitle}
+        </Heading>
+        {heroSubtitle && (
+          <Text className="text-base text-gray-600 m-0">
+            {heroSubtitle}
+          </Text>
+        )}
+      </Section>
 
-              {/* Hero */}
-              <Img
-                src={heroImageUrl}
-                alt={heroTitle}
-                width={600}
-                className="w-full"
-              />
-              <Section className="px-8 py-6">
-                <Heading as="h1" className="text-2xl font-bold text-gray-900 m-0 mb-2">
-                  {heroTitle}
-                </Heading>
-                {heroSubtitle && (
-                  <Text className="text-base text-gray-600 m-0">
-                    {heroSubtitle}
-                  </Text>
-                )}
-              </Section>
+      <Hr className="border-gray-200 mx-8" />
 
-              <Hr className="border-gray-200 mx-8" />
+      {/* Articles */}
+      {articles.map((article, i) => (
+        <Section key={i} className="px-8 py-4">
+          {article.imageUrl && (
+            <Img
+              src={article.imageUrl}
+              alt={article.title}
+              width={520}
+              className="w-full rounded mb-3"
+            />
+          )}
+          <Heading as="h2" className="text-lg font-semibold text-gray-900 m-0 mb-2">
+            {article.title}
+          </Heading>
+          <Text className="text-sm text-gray-600 m-0 mb-3 leading-6">
+            {article.summary}
+          </Text>
+          <Button href={article.linkUrl}>
+            {article.linkText ?? "Read more"}
+          </Button>
+          {i < articles.length - 1 && (
+            <Hr className="border-gray-100 mt-4" />
+          )}
+        </Section>
+      ))}
 
-              {/* Articles */}
-              {articles.map((article, i) => (
-                <Section key={i} className="px-8 py-4">
-                  {article.imageUrl && (
-                    <Img
-                      src={article.imageUrl}
-                      alt={article.title}
-                      width={520}
-                      className="w-full rounded mb-3"
-                    />
-                  )}
-                  <Heading as="h2" className="text-lg font-semibold text-gray-900 m-0 mb-2">
-                    {article.title}
-                  </Heading>
-                  <Text className="text-sm text-gray-600 m-0 mb-3 leading-6">
-                    {article.summary}
-                  </Text>
-                  <Button href={article.linkUrl}>
-                    {article.linkText ?? "Read more"}
-                  </Button>
-                  {i < articles.length - 1 && (
-                    <Hr className="border-gray-100 mt-4" />
-                  )}
-                </Section>
-              ))}
-
-              {/* CTA */}
-              <Section className="px-8 py-6 text-center">
-                <Button href={ctaUrl}>{ctaText}</Button>
-              </Section>
-
-              {/* Footer */}
-              <Section className="px-8">
-                <Footer
-                  companyName={companyName}
-                  address={companyAddress}
-                  unsubscribeUrl={unsubscribeUrl}
-                  socials={socials}
-                />
-              </Section>
-            </Section>
-          </Container>
-        </Body>
-      </Tailwind>
-    </Html>
+      {/* CTA */}
+      <Section className="px-8 py-6">
+        <Button href={ctaUrl}>{ctaText}</Button>
+      </Section>
+    </EmailLayout>
   );
 }
 
