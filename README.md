@@ -1,42 +1,59 @@
-# Email-starter
+# Email Starter
 
-## Intro
+Modern email starter with React Email and TypeScript. Build responsive, production-ready HTML emails using React components.
 
-Starter base for Email templating with Gulp, MJML and Nunjucks. 
-Powered by Gulp with this features:
+## Features
 
-- [MJML](https://mjml.io/) engine
-- Partials and templates with [Nunjucks](https://mozilla.github.io/nunjucks/)
-- Insert data with [Gulp-data](https://github.com/colynb/gulp-data)
-- Image optimization with [Gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin)
-- Built-in [BrowserSync](https://browsersync.io/) server
+- React Email components for structured, reusable email markup
+- TypeScript for type-safe templates
+- Tailwind CSS styling
+- Live preview dev server
+- Export to HTML
 
-## Installation
+## Requirements
 
-### Requirements
-- [NodeJS](https://nodejs.org/en/) (6 or greater)
-- [Git](https://git-scm.com/)
+- Node.js 18+
+- pnpm
 
-Now clone this repository
+## Quick Start
 
 ```bash
 git clone https://github.com/jeremN/Email-starter.git
-```
-
-Open the folder in your command line, and install the needed dependencies:
-
-```bash
 cd Email-starter
-npm install
+pnpm install
+pnpm dev
 ```
 
-## Usage
+## Scripts
 
-Finally, run gulp dev. Your finished templates will be created in a folder called build, viewables at this URL:
+| Script | Description |
+| --- | --- |
+| `pnpm dev` | Launch the React Email dev server with live preview |
+| `pnpm build` | Export all email templates to HTML in `out/` |
+| `pnpm preview` | Export to HTML and log the output |
 
-```bash
-gulp dev
+## Project Structure
+
+```
+src/
+  components/    Reusable UI components (Button, Header, Footer, SocialLinks)
+  emails/        Email templates (each file = one template)
+  utils/         Shared utilities (rendering helpers)
 ```
 
-## TODO
-- HTML minifier and/or beautifier
+## Included Templates
+
+- **Newsletter** -- Multi-section content layout with header, body sections, and footer
+- **Receipt** -- Order confirmation / transactional email with line items and totals
+
+## Adding New Templates
+
+1. Create a new `.tsx` file in `src/emails/`
+2. Export a default function that returns your email JSX
+3. Add a `PreviewProps` export so the dev server can render a preview with sample data
+
+The dev server will automatically pick up the new file.
+
+## License
+
+MIT
