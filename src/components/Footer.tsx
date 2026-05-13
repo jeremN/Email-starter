@@ -1,4 +1,4 @@
-import { Hr, Link, Section, Text } from "@react-email/components";
+import { Hr, Link, Section, Text } from "react-email";
 import * as React from "react";
 
 import { SocialLinks, type SocialLink } from "./SocialLinks";

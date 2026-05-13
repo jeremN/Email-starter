@@ -1,4 +1,4 @@
-import { Button as REButton } from "@react-email/components";
+import { Button as REButton } from "react-email";
 import * as React from "react";
 
 export interface ButtonProps {

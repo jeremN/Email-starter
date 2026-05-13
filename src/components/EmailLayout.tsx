@@ -7,7 +7,7 @@ import {
   Section,
   Tailwind,
   pixelBasedPreset,
-} from "@react-email/components";
+} from "react-email";
 import * as React from "react";
 
 import { Footer, type FooterProps } from "./Footer";

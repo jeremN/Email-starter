@@ -1,4 +1,4 @@
-import { Link, Section } from "@react-email/components";
+import { Link, Section } from "react-email";
 import * as React from "react";
 
 export interface SocialLink {

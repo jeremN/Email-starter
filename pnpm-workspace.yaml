@@ -1,1 +1,10 @@
-onlyBuiltDependencies: esbuild
+# Supply-chain cooldown: only install package versions published at least 7 days ago.
+# Value is in minutes (7 * 24 * 60 = 10080). pnpm 11 defaults to 1440 (1 day).
+# Override per-package with `minimumReleaseAgeExclude` when an urgent hotfix is needed.
+minimumReleaseAge: 10080
+
+# Explicitly approve packages whose install scripts may run.
+# pnpm 11 blocks all install scripts by default — these two need native binaries.
+allowBuilds:
+  esbuild: true
+  sharp: true

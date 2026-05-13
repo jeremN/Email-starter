@@ -1,4 +1,4 @@
-import { Heading, Img, Section } from "@react-email/components";
+import { Heading, Img, Section } from "react-email";
 import * as React from "react";
 
 export interface HeaderProps {
